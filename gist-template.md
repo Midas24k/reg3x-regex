@@ -1,10 +1,10 @@
-# Title (replace with your title)
+# What is a Regex
 
-What is a Regular Expression or Regex as it commonly known. Regex are components that are building blocks that are used to define patterns for matching strings within text. So in short the cool algorithms you see on the spy movies that the hero uses to decipher and crack codes to save the day. While that is one thing that Regex can be used for in code, its not the only thing. Regex can be used to create complex search patterns for finding patterns, replacing, or manipulating text efficiently. The code that can be built with Regex can range from extremely simple to "what are you talking about" hard. Understanding the concepts of Regex is definitely allows for a powerful tool to be placed in the arsenal.
+What is a Regular Expression or "Regex" as it commonly known. Regex are components that are building blocks that are used to define patterns for matching strings within text. So in short the cool algorithms you see on the spy movies that the hero uses to decipher and crack codes to save the day. While that is one thing that Regex can be used for in code, its not the only thing. Regex can be used to create complex search patterns for finding patterns, replacing, or manipulating text efficiently. The code that can be built with Regex can range from extremely simple to "what are you talking about" hard. Understanding the concepts of Regex is definitely allows for a powerful tool to be placed in the arsenal.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+
 In the example provided below using Regex and CSS through code you can highlight keywords and strings for higher visibility. This code require to Regular expressions in order to function properly, and the are as followed "keywordPattern" and "stringPattern". While this may seem like a simple thing used with a little creativity it can become complexed very quickly.
 
 <script>
