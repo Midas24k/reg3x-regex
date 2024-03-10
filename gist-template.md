@@ -45,7 +45,7 @@ codeElement.innerHTML = codeContent;
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
-For those new to Regex. The characters used to create different effects are known as "Regex Component". Below I have a compiled some common knowledge about Regex Components that will help with the understanding of how the code above works by breaking down all of the components.
+For those who are new to Regex. The characters used to create different effects are known as "Regex Component". Below I have a compiled some common knowledge about Regex Components that will help with the understanding of how the code above works by breaking down all of the components.
 
 Literals: These are characters that match themselves. For example, the regex a will match the letter "a".
 
@@ -79,19 +79,57 @@ These components can be combined in various ways to create complex patterns for 
 
 ### Anchors
 
+- `keywordPattern`
+
+- `stringPattern`
+
 ### Quantifiers
+
+- `keywordPattern`
+
+- `stringPattern`
+
 
 ### Grouping Constructs
 
+- `keywordPattern`
+
+- `stringPattern`
+
+
 ### Bracket Expressions
+
+- `keywordPattern`
+
+- `stringPattern`
+
 
 ### Character Classes
 
+- `keywordPattern`
+
+- `stringPattern`
+
+
 ### The OR Operator
+
+- `keywordPattern`
+
+- `stringPattern`
 
 ### Flags
 
+- `keywordPattern`
+
+- `stringPattern`
+
+
 ### Character Escapes
+
+- `keywordPattern`
+
+- `stringPattern`
+
 
 ## Author
 Roderick Hughey
