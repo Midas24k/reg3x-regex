@@ -6,6 +6,7 @@ What is a Regular Expression or "Regex" as it commonly known. Regex are componen
 
 In the example provided below using Regex and CSS through code you can highlight keywords and strings for higher visibility. This code require to Regular expressions in order to function properly, and the are as followed "keywordPattern" and "stringPattern". While this may seem like a simple thing used with a little creativity it can become complexed very quickly.
 
+![alt text](<Regular Expression snippet.png>)
 
 ## Table of Contents
 
