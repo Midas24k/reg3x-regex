@@ -4,34 +4,8 @@ What is a Regular Expression or "Regex" as it commonly known. Regex are componen
 
 ## Summary
 
-
 In the example provided below using Regex and CSS through code you can highlight keywords and strings for higher visibility. This code require to Regular expressions in order to function properly, and the are as followed "keywordPattern" and "stringPattern". While this may seem like a simple thing used with a little creativity it can become complexed very quickly.
 
-<script>
-// Define keywords and their corresponding CSS classes
-var keywords = ['function', 'var'];
-
-// Regular expression pattern to match keywords
-var keywordPattern = new RegExp('\\b(' + keywords.join('|') + ')\\b', 'g');
-
-// Regular expression pattern to match strings
-var stringPattern = /(["'])(?:(?=(\\?))\2.)*?\1/g;
-
-// Get the code element
-var codeElement = document.getElementById('code');
-
-// Get the code content
-var codeContent = codeElement.innerHTML;
-
-// Highlight keywords
-codeContent = codeContent.replace(keywordPattern, '<span class="keyword">$1</span>');
-
-// Highlight strings
-codeContent = codeContent.replace(stringPattern, '<span class="string">$&</span>');
-
-// Update the code element with highlighted content
-codeElement.innerHTML = codeContent;
-</script>
 
 ## Table of Contents
 
@@ -45,6 +19,7 @@ codeElement.innerHTML = codeContent;
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
+
 For those who are new to Regex. The characters used to create different effects are known as "Regex Component". Below I have a compiled some common knowledge about Regex Components that will help with the understanding of how the code above works by breaking down all of the components.
 
 Literals: These are characters that match themselves. For example, the regex a will match the letter "a".
@@ -132,5 +107,6 @@ These components can be combined in various ways to create complex patterns for 
 
 
 ## Author
+
 Roderick Hughey
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
