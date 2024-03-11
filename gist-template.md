@@ -4,7 +4,7 @@ What is a Regular Expression or "Regex" as it commonly known. Regex are componen
 
 ## Summary
 
-In the example provided below using Regex and CSS through code you can highlight keywords and strings for higher visibility. This code require to Regular expressions in order to function properly, and the are as followed "keywordPattern" and "stringPattern". While this may seem like a simple thing used with a little creativity it can become complexed very quickly.
+In the example provided below using Regex and CSS through code you can highlight keywords and strings for higher visibility. This code require to Regular expressions in order to function properly, and the are as followed `keywordPattern` and `stringPattern`. While this may seem like a simple thing used with a little creativity it can become complexed very quickly.
 
 ![alt text](<Regular Expression snippet.png>)
 
@@ -56,55 +56,51 @@ These components can be combined in various ways to create complex patterns for 
 ### Anchors
 
 - `keywordPattern`
+`\\b`: This is a word boundary anchor. It matches a position where a word character (alphanumeric or underscore) is not followed or preceded by another word character. It helps to ensure that the matched keyword is a whole word and not part of a longer word.
 
+### Backreference
 - `stringPattern`
+`\`:  This backreference, matches the same text as most recently matched by the 1st capturing group (["']). It ensures that the closing quote matches the same type as the opening quote. 
 
 ### Quantifiers
 
-- `keywordPattern`
-
 - `stringPattern`
+`*?`: This quantifier matches between zero and unlimited times, as few times as possible (non-greedy). It allows the pattern to match the shortest possible string that satisfies the regex.
 
 
 ### Grouping Constructs
 
 - `keywordPattern`
+`( )`: These parentheses define a capturing group. In this context, they group the keywords together, allowing us to match any of them as a single entity.
 
 - `stringPattern`
+`(?:(?=(\\?))\2.)*?`: This is a non-capturing group. It allows us to group parts of the pattern without capturing the matched text.
 
 
 ### Bracket Expressions
 
-- `keywordPattern`
-
 - `stringPattern`
+`(["'])`: This part of the pattern matches either a single or double quote. It uses a character class ["'] which matches any single character inside the brackets, in this case, either a single quote ' or a double quote ".
 
 
-### Character Classes
-
-- `keywordPattern`
-
-- `stringPattern`
-
-
-### The OR Operator
+### Delimiter
 
 - `keywordPattern`
-
-- `stringPattern`
+`keywords.join('|')` :This part joins the keywords array into a single string with '|' (pipe) as the delimiter. This effectively creates a regex alternation, allowing the pattern to match any of the keywords.
 
 ### Flags
 
 - `keywordPattern`
+`'g'`:This is a flag that stands for "global". It indicates that the regular expression should search for all matches within the input string, rather than stopping after the first match.
 
 - `stringPattern`
+`/g` : This flag indicates a global search, which means it searches for all matches rather than stopping after the first match.
 
 
 ### Character Escapes
 
-- `keywordPattern`
-
 - `stringPattern`
+`(?=(\\?))`: This is a positive lookahead assertion (?=) which ensures that the following pattern is matched, but does not consume any characters. Here, it looks for an optional backslash \\? (escaped because \ is a special character in regex), which is captured in a capturing group (\\?). This part allows us to handle escaped quotes.
 
 
 ## Author
